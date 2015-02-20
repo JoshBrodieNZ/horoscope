@@ -17,7 +17,8 @@ get '/:zodiac' do
   if zodiacs.include? @zodiac
     @content = dictionaries[@zodiac].generate_5_sentences 
   else
-    @content = "nope, that's not a real zodiac"
+    @zodiac = "Please select a zodiac"
+    @content = "Valid options are 'aquarius', 'aries', 'cancer', 'capricorn', 'gemini', 'leo', 'libra', 'pisces', 'sagittarius', 'scorpio', 'taurus' or 'virgo'"
   end
   erb :index
 end
