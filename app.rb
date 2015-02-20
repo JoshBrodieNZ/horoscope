@@ -16,6 +16,8 @@ get '/:zodiac' do
   @zodiac = params[:zodiac]
   if zodiacs.include? @zodiac
     @content = dictionaries[@zodiac].generate_5_sentences 
-    @image = 'https://unsplash.it/g/800/600?blur&random'
+  else
+    @content = "nope, that's not a real zodiac"
+  end
   erb :index
 end

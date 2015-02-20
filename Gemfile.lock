@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    erubis (2.7.0)
     marky_markov (0.3.5)
       msgpack
     msgpack (0.5.11)
@@ -17,5 +18,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  erubis
   marky_markov
   sinatra
