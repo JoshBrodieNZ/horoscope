@@ -1,9 +1,6 @@
 require 'sinatra'
 require 'marky_markov'
 
-set :bind, '0.0.0.0'
-set :port, 3000
-
 zodiacs = %w(aquarius aries cancer capricorn gemini leo libra pisces sagittarius scorpio taurus virgo)
 
 dictionaries = {}
